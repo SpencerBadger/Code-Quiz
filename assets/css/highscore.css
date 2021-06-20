@@ -1,0 +1,137 @@
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --neutral-color: 200;
+    --wrong-color: 0;
+    --correct-color: 145;
+}
+
+body {
+    background-color: hsl(var(--neutral-color), 100%, 20%);
+}
+
+header {
+    width: auto;
+    height: 50px;
+    margin: 10px, 20px, 30px, 20px;
+    padding: 10px;
+}
+
+main {
+    /* display: flex;
+    justify-content: center;
+    align-items:center; */
+    width: auto;
+    height: 100vh;
+    margin: 30px, auto;
+}
+
+h1 {
+    color: white;
+}
+
+.grid-head {
+    margin: 35px 0 0 15px;
+    display: grid;
+    grid-template-columns: 5;
+    grid-template-rows: 1;
+    justify-content: center;
+}
+
+.head-btn {
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid blue;
+    background-color: white;
+    width: auto;
+    height: auto;
+    justify-self: stretch;
+    grid-column-start: 1;
+    font-size: 1rem;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.head-btn:hover,
+.second-btn:hover {
+    border-color: black;
+}
+
+.second-btn {
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid hsl(var(--neutral-color), 100%, 30%);
+    background-color: hsl(var(--neutral-color), 100%, 50%);
+    grid-column-start: 3;
+    width: auto;
+    height: auto;
+}
+
+.link {
+    text-decoration: none;
+}
+
+#hs-container {
+    margin: 20px;
+    text-align: center;
+    display: grid;
+    color: white;
+    width: auto;
+    grid-template-columns: 3;
+    grid-template-row: auto;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    gap: 10px;
+    border: 1px solid blue;
+    padding: 10px 0;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid hsl(var(--neutral-color), 100%, 30%);
+    background-color: hsl(var(--neutral-color), 100%, 50%);
+}
+
+#hs-container h1 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+#rank {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+#scoreTable {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#playerName {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    margin: 15px 0;
+}
