@@ -78,12 +78,17 @@ h1 {
     height: auto;
 }
 
-.link {
-    text-decoration: none;
-}
-
 #clear-highscores {
     cursor: pointer;
+}
+
+.btn {
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid hsl(var(--neutral-color), 100%, 30%);
+    background-color: hsl(var(--neutral-color), 100%, 50%);
 }
 
 #hs-container {
@@ -101,37 +106,21 @@ h1 {
     padding: 10px 0;
 }
 
-.hide {
-    display: none;
-}
-
-.btn {
-    outline: none;
-    color: white;
-    border-radius: 5px;
-    padding: 5px 10px;
-    border: 1px solid hsl(var(--neutral-color), 100%, 30%);
-    background-color: hsl(var(--neutral-color), 100%, 50%);
-}
-
 #hs-container h1 {
     grid-column-start: 2;
     grid-row-start: 1;
 }
 
-#rank {
-    grid-column-start: 1;
-    grid-row-start: 2;
-}
-
 #scoreTable {
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-row-start: 2;
+    padding: 10px;
 }
 
 #playerName {
-    grid-column-start: 3;
+    grid-column-start: 1;
     grid-row-start: 2;
+    padding: 10px;
 }
 
 footer {
