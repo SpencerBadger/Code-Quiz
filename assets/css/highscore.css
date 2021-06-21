@@ -82,6 +82,10 @@ h1 {
     text-decoration: none;
 }
 
+#clear-highscores {
+    cursor: pointer;
+}
+
 #hs-container {
     margin: 20px;
     text-align: center;
@@ -89,7 +93,7 @@ h1 {
     color: white;
     width: auto;
     grid-template-columns: 3;
-    grid-template-row: auto;
+    grid-template-rows: 1, auto;
     grid-column-start: 2;
     grid-row-start: 1;
     gap: 10px;

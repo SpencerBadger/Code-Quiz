@@ -3,13 +3,17 @@ const Rank = document.getElementById('rank');
 const sTable = document.getElementById('scoreTable');
 const pName = document.getElementById('playerName');
 
-displayScore();
-clearEl.onclick = clearHighScore;
+
+
+clearEl.addEventListener('click', clearHighScore);
 
 function clearHighScore() {
     window.localStorage.removeItem('highscores');
     window.location.reload();
 }
+
+displayScore();
+
 
 function displayScore() {
 
@@ -21,12 +25,9 @@ function displayScore() {
         console.log(highscores);
 
         let count = 1;
-        //create litag
-        //set text content
+
         count + " " + score.name + " " + score.playerScores
         count++
-        //get the ol tag
-        //append the li tag in the ol
 
         for (i = 0; i <= highscores.length; i++) {
             // console.dir(highscores[i].name);
@@ -47,30 +48,27 @@ function displayScore() {
             // liThree.innerHTML = counter;
 
         }
-
-
-
-
-
     })
-
 }
 
 
-const highScoreT = document.getElementById('highscores-table');
-const hsContainer = document.getElementById('hs-container');
 
-window.onload = function() {
+const hsCont = document.getElementById('hs-container');
 
-    if (highscores = JSON.parse(window.localStorage.getItem("highscores"))) {
-        console.log('information present');
-        hsContainer.classList.remove('hide');
-        displayScore();
-    } else {
-        const Cont = document.getElementById('no-score');
-        Cont.classList.remove('hide');
-    }
-}
+// window.onload = function() {
+
+//     if (highscores = JSON.parse(window.localStorage.getItem("highscores"))) {
+//         console.log('information present');
+//         hsContainer.classList.remove('hide');
+//         displayScore();
+//     } else {
+//         const Cont = document.getElementById('no-score');
+//         Cont.classList.remove('.hide');
+//         hsCont.classList.add('.hide');
+//     }
+// }
+
+
 
 // function highScore(){
 //     highScoreT.classList.add('hide');

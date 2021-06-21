@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- Reset CSS stylesheet included to ensure best practices.-->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Updated Title in line with the company and services provided.-->
+    <script defer src="assets/javascript/script.js"></script>
+    <title>Code Quiz</title>
+</head>
+
+<body>
+    <!-- Main Quiz Text -->
+    <header class='grid-head'>
+        <button class='head-btn first-btn'><a class='link' href="highscores.html">View Highscores</a></button>
+        <button class="time-button first-btn">
+            <div class="timer">
+                <p id='timer'>Time:<span id="time-remaining">0</span></p>
+            </div>
+         </button>
+    </header>
+    <main>
+        <title>Quiz App</title>
+        <section class="container">
+            <div id="question-container" class="hide">
+                <div id='question'>Question</div>
+                <div id='answer-buttons' class='btn-grid'>
+                    <button class='btn'>Answer 1</button>
+                    <button class='btn'>Answer 2</button>
+                    <button class='btn'>Answer 3</button>
+                    <button class='btn'>Answer 4</button>
+                </div>
+            </div>
+            <div class='controls'>
+                <button id='start-button' class='start-btn btn'>Start</button>
+                <button id='next-button' class='next-btn btn'>Next</button>
+                <button id='end-button' class='end-btn btn'>End</button>
+            </div>
+            <div id='end-of-game' class='hide container-end'>
+                <h1 id='title-end'>You have finished the quiz</h1>
+                <br>
+                <p id='score'>Your score is: <span id="result">0</span></p>
+                <div>
+                    <label for='name'>Enter your name:</label>
+                    <input type='text' id='player-name'>
+                    <button id='submit' type="submit" class='btn'>Submit</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <h2> &copy; 2021 Badger Software Solutions</h2>
+
+    </footer>
+</body>
+
+</html>
